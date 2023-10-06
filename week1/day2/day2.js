@@ -7,5 +7,20 @@ n= Math.floor(n/10);
 };
 console.log(sum)
 }
-sum(1230);
-sum(2203)
+// sum(1230);
+// sum(2203)
+
+//sum of the array  sets min or max;
+
+function sumMin(arr){
+    let max= -Infinity;
+    for(let i=0;i<arr.length;i++){
+    if(max<arr[i]){
+        max= arr[i];
+    };};
+let sum= 0;
+arr.forEach(el => sum+=el);
+console.log(sum-max)
+};
+
+sumMin([2,3,4,6,-2])
