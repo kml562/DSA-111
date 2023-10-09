@@ -23,4 +23,18 @@ arr.forEach(el => sum+=el);
 console.log(sum-max)
 };
 
-sumMin([2,3,4,6,-2])
+//sumMin([2,3,4,6,-2]);
+
+function armstrong(n){
+    let v=n;
+    let sum=0;
+    while(n!==0){
+    let val  = n%10;
+    n= Math.floor(n/10);
+    sum+= val**3;
+    };
+    console.log(sum)
+console.log(sum===v);
+}
+// armstrong(125)
+// armstrong(153)
